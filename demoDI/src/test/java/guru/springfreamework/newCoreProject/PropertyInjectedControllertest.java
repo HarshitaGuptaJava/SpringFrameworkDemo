@@ -16,7 +16,7 @@ public class PropertyInjectedControllertest {
     public void setUp(){
 
     this.propertyGeneratedController=new PropertyGeneratedController();
-    this.propertyGeneratedController.constructorGreetingService=new ConstructorGreetingService();
+    this.propertyGeneratedController.greetingServiceImpl=new ConstructorGreetingService();
     }
 
 @Test

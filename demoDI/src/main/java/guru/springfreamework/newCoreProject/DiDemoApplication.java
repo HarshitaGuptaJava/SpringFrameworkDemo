@@ -1,5 +1,6 @@
 package guru.springfreamework.newCoreProject;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
 import guru.springfreamework.newCoreProject.controllers.ConstructedInjectedController;
 import guru.springfreamework.newCoreProject.controllers.MyControllers;
 import guru.springfreamework.newCoreProject.controllers.PropertyGeneratedController;
@@ -14,7 +15,7 @@ public class DiDemoApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx=		SpringApplication.run(DiDemoApplication.class, args);
 		MyControllers controllers=(MyControllers)ctx.getBean("myControllers");
-		controllers.hello();
+		System.out.println(controllers.hello());
 
 		PropertyGeneratedController propertyGeneratedController=(PropertyGeneratedController)ctx.getBean("propertyGeneratedController");
 		System.out.println(propertyGeneratedController.sayHello());
