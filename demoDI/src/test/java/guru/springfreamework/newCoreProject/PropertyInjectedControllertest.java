@@ -1,5 +1,6 @@
 package guru.springfreamework.newCoreProject;
 
+import guru.springfreamework.newCoreProject.Services.ConstructorGreetingService;
 import guru.springfreamework.newCoreProject.Services.GreetingService;
 import guru.springfreamework.newCoreProject.Services.GreetingServiceImpl;
 import guru.springfreamework.newCoreProject.controllers.PropertyGeneratedController;
@@ -15,7 +16,7 @@ public class PropertyInjectedControllertest {
     public void setUp(){
 
     this.propertyGeneratedController=new PropertyGeneratedController();
-    this.propertyGeneratedController.greetingServiceImpl=new GreetingServiceImpl();
+    this.propertyGeneratedController.constructorGreetingService=new ConstructorGreetingService();
     }
 
 @Test
