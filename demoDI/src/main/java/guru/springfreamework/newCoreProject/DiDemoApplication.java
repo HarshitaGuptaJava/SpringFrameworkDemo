@@ -1,6 +1,7 @@
 package guru.springfreamework.newCoreProject;
 
 import com.sun.org.apache.xpath.internal.SourceTree;
+import guru.springfreamework.newCoreProject.ExampleBean.FakeDataSource;
 import guru.springfreamework.newCoreProject.controllers.ConstructedInjectedController;
 import guru.springfreamework.newCoreProject.controllers.MyControllers;
 import guru.springfreamework.newCoreProject.controllers.PropertyGeneratedController;
@@ -17,13 +18,18 @@ public class DiDemoApplication {
 		MyControllers controllers=(MyControllers)ctx.getBean("myControllers");
 		System.out.println(controllers.hello());
 
-		PropertyGeneratedController propertyGeneratedController=(PropertyGeneratedController)ctx.getBean("propertyGeneratedController");
+		/*PropertyGeneratedController propertyGeneratedController=(PropertyGeneratedController)ctx.getBean("propertyGeneratedController");
 		System.out.println(propertyGeneratedController.sayHello());
 
 		SetterGeneratedController setterGeneratedController=(SetterGeneratedController)ctx.getBean("setterGeneratedController");
 		System.out.println(setterGeneratedController.sayHello());
 
 		ConstructedInjectedController constructedInjectedController=(ConstructedInjectedController)ctx.getBean("constructedInjectedController");
-		System.out.println(constructedInjectedController.sayHello());
+		System.out.println(constructedInjectedController.sayHello());*/
+
+
+		FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
+
+		System.out.println(fakeDataSource.getUser());
 	}
 }
