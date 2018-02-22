@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: spring.io.batchparameter.BatchParameterApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.05 sec - in spring.io.batchparameter.BatchParameterApplicationTests
